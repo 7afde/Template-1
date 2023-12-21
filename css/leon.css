@@ -10,6 +10,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Work Sans', sans-serif;
 }
@@ -363,3 +366,56 @@ body {
     color: #777;
 }
 /* End About */
+/* Start Contact */
+.contact {
+    padding: var(--section-padding) 0px;
+    background-color: var(--section-background);
+}
+.contact .info {
+    padding: var(--section-padding) 0px;
+    text-align: center;
+}
+.contact .info .label {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--second-color);
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+.contact .info .link {
+    text-decoration: none;
+    display: block;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--main-color);
+}
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.contact .info .social i {
+    color: var(--second-color);
+    margin-left: 10px;
+}
+@media (max-width: 767px) {
+    .contact .info .label,
+    .contact .info .link {
+        font-size: 24px;
+    }
+}
+/* End Contact */
+/* Start Footer */
+.footer {
+    background-color: var(--second-color);
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 18px;
+}
+.footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+/* End Footer */
